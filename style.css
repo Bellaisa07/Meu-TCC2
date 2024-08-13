@@ -27,11 +27,13 @@ main{
     display: flex;
     flex-direction: row;
     margin-top: 50px;
+    max-width: 1000px;
 }
 
 h2{
-    font-size: 56px;
-    line-height: 10px;
+    font-size: 60px;
+    width: 500px;
+    line-height: 50px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
 }
@@ -45,7 +47,13 @@ p{
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 img{
-    width: 500px;
+    width: 1000px;
+    margin-left: 80%;
+    
+}
+
+aside{
+    margin-top: 200px;   
 }
 a{
     color: aliceblue;
@@ -71,4 +79,12 @@ form{
 }
 input{
     margin-top: 30px;
+    width: 200px;
+    border-radius: 9px;
+    text-align: center;
+}
+#mesg{
+    height:100px;
+    width: 200px;
+
 }
