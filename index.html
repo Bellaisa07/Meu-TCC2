@@ -11,14 +11,26 @@
         p{
             margin-left: 10px;
         }
+        *{
+            margin:0;
+            padding:0;
+        }
+        #home{
+            padding: 1% 7%;
+            min-height: 100vh;
+        }
     </style>
 </head>
 <body>
     <header>
-        <div id="title">
-            <h1>Marketing</h1>
-            <h1>criativo</h1>
-        </div>
+        
+            
+            <button class="button" data-text="Awesome">
+                <span class="actual-text">&nbsp;ContrataTech&nbsp;</span>
+                <span aria-hidden="true" class="hover-text">&nbsp;ContrataTech&nbsp;</span>
+            </button>
+        
+        
         <ul>
             <a href="#"><li>inicio</li></a>
             <a href="#"><li>Serviços</li></a>
@@ -28,7 +40,7 @@
         </ul>
     </header>
 
-    <main>
+    <main id="home">
         <aside>
             
   
@@ -38,21 +50,32 @@
        <p>tudo o que você precisa saber sobre sites, e ajuda para fazer o Seu!
 
             </p>
-            <form >
-                <div class="textfield">
-                <input type="text" placeholder="Nome"><br>
-                <input type="email" placeholder="E-mail"><br>
-                <input type="number" placeholder="Seu Número"><br>
-                <input id="mesg" type="text" placeholder="Escreva Sua Mensagem"><br>
-                <input type="submit" value="Enviar >">
-                
-            </form> 
+            
+<div class="form-container">
+      <form class="form">
+        <div class="form-group">
+          <label for="email">Seu Email</label>
+          <input type="text" id="email" name="email" required="">
+        </div>
+        <div class="form-group">
+          <label for="textarea">Como posso te ajudar?</label>
+          <textarea name="textarea" id="textarea" rows="10" cols="50" required="">          </textarea>
+        </div>
+        <button class="form-submit-btn" type="submit">Submit</button>
+      </form>
+    </div>
         </div>
         </aside>
         <article>
             <img src="img/astronauta png2.png" alt="astronauta">
         </article>
+        
     </main>
+    <section class="tamanho">
+        padding: 1% 7%;
+        min-height: 100vh;
+
+    </section>
    
 </body>
 </html>
