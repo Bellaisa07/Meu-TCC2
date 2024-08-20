@@ -88,7 +88,7 @@ input{
     width: 200px;
 
 }
-/* From Uiverse.io by gharsh11032000 */ 
+
 .form-container {
     width: 400px;
     background: linear-gradient(#212121, #212121) padding-box,
@@ -188,8 +188,7 @@ input{
     background-color: #fff;
     border-color: #fff;
   }
-  /* From Uiverse.io by satyamchaudharydev */ 
-/* === removing default button style ===*/
+
 .button {
     margin: 0;
     height: auto;
@@ -199,7 +198,7 @@ input{
     cursor: pointer;
   }
   
-  /* button styling */
+
   .button {
     --border-right: 6px;
     --text-stroke-color: rgb(255, 255, 255);
@@ -214,7 +213,7 @@ input{
     color: transparent;
     -webkit-text-stroke: 1px var(--text-stroke-color);
   }
-  /* this is the text, when you hover on button */
+  
   .hover-text {
     position: absolute;
     box-sizing: border-box;
@@ -227,12 +226,76 @@ input{
     transition: 0.5s;
     -webkit-text-stroke: 1px #c236ec;
   }
-  /* hover */
+
   .button:hover .hover-text {
     width: 100%;
     filter: drop-shadow(0 ) white;
   }
   
+
+.card {
+  position: relative;
+  width: 190px;
+  height: 254px;
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding: 12px;
+  gap: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  left: -5px;
+  margin: auto;
+  width: 200px;
+  height: 264px;
+  border-radius: 10px;
+  background: linear-gradient(-45deg, #e81cff 0%, #40c9ff 100% );
+  z-index: -10;
+  pointer-events: none;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card::after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(-45deg, #fc00ff 0%, #00dbde 100% );
+  transform: translate3d(0, 0, 0) scale(0.95);
+  filter: blur(20px);
+}
+
+.heading {
+  font-size: 20px;
+  text-transform: capitalize;
+  font-weight: 700;
+}
+
+.card p:not(.heading) {
+  font-size: 14px;
+}
+
+.card p:last-child {
+  color: #e81cff;
+  font-weight: 600;
+}
+
+.card:hover::after {
+  filter: blur(30px);
+}
+
+.card:hover::before {
+  transform: rotate(-90deg) scaleX(1.34) scaleY(0.77);
+}
+
+
   
   
   
