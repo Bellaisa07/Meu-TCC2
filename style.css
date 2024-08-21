@@ -48,8 +48,18 @@ p{
 }
 img{
     width: 1000px;
-    margin-left: 80%;
-    
+    margin-left: 60%;
+    position: relative;
+    animation: flutuar 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar{
+  0%{
+    top: 0;
+  }
+  100%{
+    top: 30px;
+  }
 }
 
 aside{
@@ -224,7 +234,7 @@ input{
     border-right: var(--border-right) solid white;
     overflow: hidden;
     transition: 0.5s;
-    -webkit-text-stroke: 1px #c236ec;
+    -webkit-text-stroke: 2px #c236ec;
   }
 
   .button:hover .hover-text {
@@ -235,16 +245,19 @@ input{
 
 .card {
   position: relative;
-  width: 190px;
-  height: 254px;
+  width: 290px;
+  height: 354px;
   background-color: #000;
   display: flex;
   flex-direction: column;
   justify-content: end;
-  padding: 12px;
-  gap: 12px;
-  border-radius: 8px;
+  padding: 22px;
+  gap: 22px;
+  border-radius: 9px;
   cursor: pointer;
+  float: left;
+  margin: 100px;
+  text-align: center;
 }
 
 .card::before {
@@ -292,7 +305,29 @@ input{
 }
 
 .card:hover::before {
-  transform: rotate(-90deg) scaleX(1.34) scaleY(0.77);
+  transform: rotate(-90deg) scaleX(2.34) scaleY(0.88);
+}
+
+.input {
+  color: white;
+  border: 4px solid #8707ff;
+  border-radius: 15px;
+  padding: 15px 85px;
+  background: transparent;
+  max-width: 290px;
+}
+
+.input:active {
+  box-shadow: 7px 7px 20px #8707ff inset;
+}
+section.portfolio{
+  padding: 80px 4%;
+  box-shadow: 0 0 40px 10px #ffffff1d;
+}
+
+section.portfolio .flex{
+  justify-content: space-around;
+  margin-top: 60px;
 }
 
 
