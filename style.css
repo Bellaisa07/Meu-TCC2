@@ -46,7 +46,7 @@ p{
     max-width: 500px;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
-img{
+#astronauta{
     width: 1000px;
     margin-left: 60%;
     position: relative;
@@ -241,6 +241,17 @@ input{
     width: 100%;
     filter: drop-shadow(0 ) white;
   }
+  #cards{
+    justify-content: center;
+    background-color: rgb(254, 21, 21);
+  }
+
+  #servico{
+    justify-content: center;
+    justify-items: center;
+    margin-left: 300px;
+    margin-top: -200px
+  }
   
 
 .card {
@@ -330,7 +341,4 @@ section.portfolio .flex{
   margin-top: 60px;
 }
 
-
-  
-  
   
