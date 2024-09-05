@@ -403,5 +403,7 @@ button:after {
   transition-property: width, left;
 }
 #eu{
-  filter: drop-shadow(0 0 0 12px rgb(111, 0, 255));
+ 
+ filter: drop-shadow(0 0 20px rgb(153, 83, 194));
+ 
 }
