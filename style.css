@@ -41,14 +41,15 @@ span{
     color: blueviolet;
 
 }
-p{
+#desc{
     line-height: 20px;
     max-width: 500px;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 5rem;
 }
 #astronauta{
-    width: 1000px;
-    margin-left: 60%;
+    width: 800px;
+    margin-left: 50%;
     position: relative;
     animation: flutuar 1.5s ease-in-out infinite alternate;
 }
@@ -400,4 +401,7 @@ button:after {
   transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
   transition-duration: 400ms;
   transition-property: width, left;
+}
+#eu{
+  filter: drop-shadow(0 0 0 12px rgb(111, 0, 255));
 }
