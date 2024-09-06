@@ -362,7 +362,7 @@ top: 30px;
 }
 }
 
-button {
+.topico {
   font-size: 40px;
   color: #e1e1e1;
   font-family: inherit;
@@ -378,18 +378,18 @@ button {
   margin-bottom: 90px;
 }
 
-button:focus,
-button:hover {
+.topico:focus,
+.topico:hover {
   color: #6c49a0;
 }
 
-button:focus:after,
-button:hover:after {
+.topico:focus:after,
+.topico:hover:after {
   width: 100%;
   left: 0%;
 }
 
-button:after {
+.topico:after {
   content: "";
   pointer-events: none;
   bottom: -2px;
@@ -407,3 +407,46 @@ button:after {
  filter: drop-shadow(0 0 20px rgb(153, 83, 194));
  
 }
+.info{
+  padding-top: 2rem;
+  max-width: 1280px;
+  margin-inline: auto;
+  padding-bottom: 20rem;
+}
+.line{
+  width: 100%;
+    height: 2px;
+    background-color: rgb(255,255,255, 0.15);
+}
+/*.item{
+  flex: 1;
+  min-width: 150px;
+}
+.item__title{
+  font-size: 2.5rem;
+  font-weight: 600;
+  line-height: 1;
+  text-align: center;
+}
+.item__description{
+  color: rgb(255, 255, 255, 0.7);
+  text-transform: uppercase;
+  text-align: center;
+}
+.info-wrapper{
+  display: flex;
+  align-items: center;
+  padding-inline: 1.25rem;
+  gap: 1.5rem;
+  margin-top: 7rem;
+  flex-wrap: wrap;
+}
+  .info-wrapper{
+    display: flex;
+    align-items: center;
+    padding-inline: 1.25rem;
+    gap: 1.5rem;
+    margin-top: 7rem;
+    flex-wrap: wrap;
+  }
+    */
